@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "httpServer": "http-server -c-1 ./dist/toBeBetter",
     "build": "ng build",
+    "buildProd": "ng build --prod ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -19,8 +21,11 @@
     "@angular/http": "^6.0.3",
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/pwa": "^0.6.8",
     "@angular/router": "^6.0.3",
+    "@angular/service-worker": "^6.0.3",
     "core-js": "^2.5.4",
+    "ng-zorro-antd": "^1.1.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

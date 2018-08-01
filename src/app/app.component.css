@@ -1,0 +1,10 @@
+:host {
+  text-align: center;
+}
+
+:host ::ng-deep .ant-layout-header,
+:host ::ng-deep .ant-layout-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+

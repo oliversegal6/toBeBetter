@@ -1,0 +1,15 @@
+<nz-table #basicTable [nzData]="childs">
+  <thead>
+    <tr>
+      <th>名字</th>
+      <th *ngFor="let target of targets">{{target.name}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{data.name}}</td>
+      <th *ngFor="let target of targets"><nz-rate [ngModel]="0" [nzCount]="1" (click)="onSelect(target)"></nz-rate></th>
+
+    </tr>
+  </tbody>
+</nz-table>
