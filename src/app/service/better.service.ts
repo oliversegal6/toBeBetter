@@ -10,7 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class BetterService {
 
-  private childsUrl = 'api/childs';
+  private childsUrl = 'http://localhost:5000/ToBeBetter/children?query={}';
 
   constructor( private http: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class BetterService {
     // return of(CHILDS);
     return this.http.get<Child[]>(this.childsUrl)
     .pipe(
-      tap(heroes => this.log(`fetched childs`)),
+      tap(childs => this.log(`fetched childs`)),
       catchError(this.handleError('getChilds', []))
     );
   }
